@@ -19,7 +19,7 @@ export default function Template({
   );
 }
 
-/*export const pageQuery = graphql`
+export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
@@ -30,4 +30,4 @@ export default function Template({
       }
     }
   }
-`;*/
+`;
