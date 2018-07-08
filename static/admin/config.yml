@@ -1,5 +1,9 @@
+#backend:
+#  name: test-repo
+
 backend:
-  name: test-repo
+  name: github
+  repo: mkeating/portfolio2018
 
 media_folder: static/assets
 public_folder: assets
