@@ -9,20 +9,18 @@ Integer leo nibh, fringilla lacinia justo et, tempus ornare urna. Aliquam ullamc
 
 ```
 return (
-				<nav className={"nav " + (this.props.deployed ? 'deployed' : '')}>
+  <nav className={"nav " + (this.props.deployed ? 'deployed' : '')}>
 					
-					<Link to="/"><h1>Home</h1></Link>
+	<Link to="/"><h1>Home</h1></Link>
 
-					<div className="nav-items">
-						<ul className="nav-list">
-							<ListLink to="/blog/">Blog</ListLink>
-							<ListLink to="/me/">Me</ListLink>
-							<ListLink to="/work/">Work</ListLink>
-						</ul>
-					</div>
-				
-				</nav>
-		)
+	<div className="nav-items">
+	  <ul className="nav-list">
+	    <ListLink to="/blog/">Blog</ListLink>
+	    <ListLink to="/me/">Me</ListLink>
+	    <ListLink to="/work/">Work</ListLink>
+	   </ul>
+	</div>
+   </nav>)
 ```
 
 Etiam ac purus eget urna dignissim auctor a vitae arcu. In convallis mi vitae nulla rhoncus mollis. Integer eu leo neque. Sed rutrum blandit felis non finibus. In efficitur mauris magna, vitae facilisis nisi vehicula eget. Praesent nisi mi, vehicula nec fringilla at, euismod in turpis. Integer ultricies vel enim in dignissim. Nunc auctor nibh a ultrices pretium. Phasellus maximus turpis id ultrices aliquam. Etiam leo orci, consequat non euismod ut, rhoncus sit amet felis. Curabitur ut consequat tellus. Morbi lacinia vehicula posuere. Fusce at sem nunc.
