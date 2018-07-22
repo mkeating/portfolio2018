@@ -1,6 +1,11 @@
 import React from "react";
 import Link from "gatsby-link";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+
 import './index.scss';
 
 const ListLink = props => (
@@ -43,6 +48,21 @@ class Nav extends React.Component {
 							<ListLink to="/blog/">Blog</ListLink>
 							<ListLink to="/me/">Me</ListLink>
 							<ListLink to="/work/">Work</ListLink>
+						</ul>
+					</div>
+
+					<div className="social">
+						<ul>
+							<li>
+								<a href="">
+									<FontAwesomeIcon icon={faGithub} />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<FontAwesomeIcon icon={faLinkedin} />
+								</a>
+							</li>
 						</ul>
 					</div>
 				
