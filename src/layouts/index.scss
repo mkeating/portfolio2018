@@ -66,6 +66,28 @@ a:hover { text-decoration: underline; }
         } 
       }          
     }
+
+    .social{
+      display: inherit;
+      width:100%;
+      font-size: 2rem;
+    
+      ul {
+        list-style: none;
+        padding: 1rem;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+      
+        li {
+          padding: .3rem 0;
+          overflow: hidden;
+          text-align: center;
+          display: inline-block;
+          width: 50%;
+        }
+      }
+    }
   }
 
   .content{
