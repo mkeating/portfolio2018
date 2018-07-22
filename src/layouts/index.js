@@ -92,6 +92,6 @@ class Main extends React.Component {
 }
 
 export default({ children }) => (
-		<Main chilren = {children()} />
+		<Main children = {children()} />
 	);
 	
