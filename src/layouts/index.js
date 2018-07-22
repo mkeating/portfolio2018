@@ -3,6 +3,8 @@ import Link from "gatsby-link";
 
 import './index.scss';
 
+require("prismjs/themes/prism-solarizedlight.css");
+
 const ListLink = props => (
 		<li>
 			<Link to={props.to}>
@@ -77,9 +79,7 @@ class Main extends React.Component {
 				<Nav deployed={this.state.navDeployed}/>
 				
 				<div className ="content">
-					
 					{this.props.children}
-
 				</div>
 				
 
