@@ -38,7 +38,7 @@ class Nav extends React.Component {
 		return (
 				<nav className={"nav " + (this.props.deployed ? 'deployed' : '')}>
 					
-					<Link to="/"><h1>Home</h1></Link>
+					<Link to="/"><h1>Michael Keating</h1></Link>
 
 					<div className="nav-items">
 						<ul className="nav-list">
@@ -77,6 +77,8 @@ class Main extends React.Component {
 			<div className="main">
 				
 				<Nav deployed={this.state.navDeployed}/>
+
+				<div className="mobile-header"><Link to="/">MK</Link></div>
 				
 				<div className ="content">
 					{this.props.children}

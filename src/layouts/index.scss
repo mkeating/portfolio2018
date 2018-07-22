@@ -80,7 +80,22 @@ a:hover { text-decoration: underline; }
 .mobile-nav-button {
   display: none; }
 
+.mobile-header{
+  display:none;
+}
+
 @media (max-width: 700px) {
+
+  .mobile-header{
+    display:block;
+    position: absolute;
+    top: 0;
+    font-size: 35px;
+    opacity: .3;
+    width: 100%;
+    text-align: center;
+  }
+
   .mobile-nav-button {
     display: block;
     position: absolute;
@@ -134,5 +149,12 @@ a:hover { text-decoration: underline; }
     .deployed .nav-list {
       display: block; 
     } 
+}
+
+
+
+pre code {
+    display: block;
+    overflow-x: auto;
 }
 
