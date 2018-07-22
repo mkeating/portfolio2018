@@ -11,11 +11,13 @@ import './index.scss';
 require("prismjs/themes/prism-solarizedlight.css");
 
 const ListLink = props => (
-		<li>
-			<Link to={props.to}>
+		
+		<Link to={props.to}>
+			<li>
 				{props.children}
-			</Link>
-		</li>
+			</li>
+		</Link>
+		
 	);
 
 class MobileNavButton extends React.Component {

@@ -25,7 +25,7 @@ a:hover { text-decoration: underline; }
 
   nav {
     background: #333333;
-    flex: 0 0 300px;
+    flex: 0 0 250px;
     display: inherit;
     transition: all .5s;
     flex-direction: column;
@@ -125,7 +125,7 @@ a:hover { text-decoration: underline; }
     bottom: 0;
     left: 0;
     background: #333333;
-    color: red;
+    color: $color;
     width: 100%;
     height: 4em;
     padding-top: 6px; 
@@ -133,7 +133,7 @@ a:hover { text-decoration: underline; }
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #f9f4e8;
+    background-color: $color;
     margin: 6px auto;
     transition: 0.4s;
     border-radius: 2px; 
@@ -173,10 +173,7 @@ a:hover { text-decoration: underline; }
     } 
 }
 
-
-
-pre code {
-    display: block;
-    overflow-x: auto;
+code {
+  font-size:.5rem;
 }
 
