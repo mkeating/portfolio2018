@@ -16,11 +16,16 @@
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-netlify-cms": "^2.0.1",
     "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-plugin-typography": "^1.7.19",
     "gatsby-remark-prismjs": "^2.0.5",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "netlify-cms": "^1.9.3",
     "prismjs": "^1.15.0",
-    "react-fontawesome": "^1.6.1"
+    "react-fontawesome": "^1.6.1",
+    "typography-theme-bootstrap": "^0.16.7",
+    "typography-theme-judah": "^0.15.10",
+    "typography-theme-lawton": "^0.15.10",
+    "typography-theme-lincoln": "^0.15.11"
   }
 }

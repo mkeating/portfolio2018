@@ -8,7 +8,9 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import './index.scss';
 
-require("prismjs/themes/prism-solarizedlight.css");
+require("prismjs/themes/prism-tomorrow.css");
+
+//import 'prismjs/components/prism-javascript';
 
 const ListLink = props => (
 		
