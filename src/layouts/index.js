@@ -61,12 +61,12 @@ class Nav extends React.Component {
 						<ul>
 							<li>
 								<a href="">
-									<FontAwesomeIcon icon={faGithub} />
+									<FontAwesomeIcon icon={faGithub} size="xs"/>
 								</a>
 							</li>
 							<li>
 								<a href="">
-									<FontAwesomeIcon icon={faLinkedin} />
+									<FontAwesomeIcon icon={faLinkedin} size="xs"/>
 								</a>
 							</li>
 						</ul>
