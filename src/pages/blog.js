@@ -9,22 +9,24 @@ const IndexPage = ({data}) => {
       {posts.map (({node: post}) => {
         const {frontmatter} = post;
         return (
-          <div>
-            <h2>
-              <Link to={frontmatter.path}>
-                {frontmatter.title}
-              </Link>
-            </h2>
-            <p>{frontmatter.date}</p>
-            <p>{frontmatter.excerpt}</p>
-          </div>
+          <Link to={frontmatter.path}>
+            <div>
+              <h2>
+                
+                  {frontmatter.title}
+                
+              </h2>
+              <p>{frontmatter.date}</p>
+              <p>{frontmatter.excerpt}</p>
+            </div>
+          </Link>
         );
       })}
     </div>
   );
 };
 
-export const pageQuery = graphql`
+export const blogQuery = graphql`
   query IndexQuery {
     allMarkdownRemark( filter: { frontmatter: { path: { regex: "/\/blog\/(.*)/" } } } sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
