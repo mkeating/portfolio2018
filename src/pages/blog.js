@@ -36,6 +36,7 @@ export const blogQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            excerpt
           }
         }
       }
