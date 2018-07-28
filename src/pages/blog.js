@@ -17,7 +17,7 @@ const IndexPage = ({data}) => {
                 
               </h2>
               <p>{frontmatter.date}</p>
-              <p>{frontmatter.excerpt}</p>
+              <p>{frontmatter.description}</p>
             </div>
           </Link>
         );
@@ -36,7 +36,7 @@ export const blogQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
-            excerpt
+            description
           }
         }
       }
