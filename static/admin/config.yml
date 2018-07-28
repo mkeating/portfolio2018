@@ -18,6 +18,7 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - { name: excerpt, label: Excerpt, widget: markdown }
   - name: project
     label: project
     folder: projects
