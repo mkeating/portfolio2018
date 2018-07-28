@@ -2,12 +2,12 @@
 path: /blog/test
 date: '2018-07-15'
 title: test
-excerpt: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo est vel
-  leo dignissim, vel volutpat ex dignissim. Lorem ipsum dolor sit amet,
-  consectetur adipiscing elit. Phasellus erat tortor, aliquet eu sodales vitae,
-  porttitor eget enim. Phasellus volutpat fringilla cursus. Ut sed vehicula
-  felis. In ligula erat, condimentum in feugiat id, i...
+description: >-
+  Etiam ac purus eget urna dignissim auctor a vitae arcu. In convallis mi vitae
+  nulla rhoncus mollis. Integer eu leo neque. Sed rutrum blandit felis non
+  finibus. In efficitur mauris magna, vitae facilisis nisi vehicula eget.
+  Praesent nisi mi, vehicula nec fringilla at, euismod in turpis. Integer
+  ultricies vel enim in dignissim. Nunc auctor nibh a ultric
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo est vel leo dignissim, vel volutpat ex dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus erat tortor, aliquet eu sodales vitae, porttitor eget enim. Phasellus volutpat fringilla cursus. Ut sed vehicula felis. In ligula erat, condimentum in feugiat id, interdum bibendum justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar eu leo sed interdum.
 
