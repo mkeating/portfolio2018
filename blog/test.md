@@ -2,6 +2,12 @@
 path: /blog/test
 date: '2018-07-15'
 title: test
+excerpt: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo est vel
+  leo dignissim, vel volutpat ex dignissim. Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit. Phasellus erat tortor, aliquet eu sodales vitae,
+  porttitor eget enim. Phasellus volutpat fringilla cursus. Ut sed vehicula
+  felis. In ligula erat, condimentum in feugiat id, i...
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo est vel leo dignissim, vel volutpat ex dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus erat tortor, aliquet eu sodales vitae, porttitor eget enim. Phasellus volutpat fringilla cursus. Ut sed vehicula felis. In ligula erat, condimentum in feugiat id, interdum bibendum justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar eu leo sed interdum.
 
