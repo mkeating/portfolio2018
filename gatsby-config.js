@@ -8,11 +8,11 @@ module.exports = {
       name: "blog",
     },
 
-    resolve: `gatsby-source-filesystem`,
+    /*resolve: `gatsby-source-filesystem`,
     options: {
       path: `${__dirname}/projects`,
       name: "projects",
-    },
+    },*/
   },
   {
       resolve: `gatsby-plugin-typography`,
