@@ -26,9 +26,11 @@ const IndexPage = ({data}) => {
   );
 };
 
+//sort: { order: DESC, fields: [frontmatter___date] }
+
 export const blogQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark( filter: { frontmatter: { path: { regex: "/\/blog\/(.*)/" } } } sort: { order: DESC, fields: [frontmatter___date] }) {
+  query BlogIndexQuery {
+    allMarkdownRemark( filter: { frontmatter: { path: { regex: "/\/blog\/(.*)/" } } } ) {
       edges {
         node {
           id

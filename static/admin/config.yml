@@ -29,3 +29,4 @@ collections:
       - { name: body, label: Body, widget: markdown }
       - { name: description, label: Description, widget: markdown }
       - { name: builtWith, label: Built With, widget: list }
+      - { name: date, label: Date, widget: date }
