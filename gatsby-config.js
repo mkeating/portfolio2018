@@ -3,16 +3,17 @@ module.exports = {
   `gatsby-plugin-netlify-cms`,
   {
     resolve: `gatsby-source-filesystem`,
-    options: {
-      path: `${__dirname}/blog`,
-      name: "blog",
-    },
-
-    /*resolve: `gatsby-source-filesystem`,
-    options: {
-      path: `${__dirname}/projects`,
-      name: "projects",
-    },*/
+    	options: {
+      		path: `${__dirname}/blog`,
+     		 name: "blog",
+    	},
+  },
+  {	
+    resolve: `gatsby-source-filesystem`,
+	    options: {
+	      path: `${__dirname}/projects`,
+	      name: "projects",
+	    },
   },
   {
       resolve: `gatsby-plugin-typography`,
