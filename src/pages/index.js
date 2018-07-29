@@ -17,6 +17,10 @@ const IndexPage = ({data}) => {
               </h2>
               <p>{frontmatter.date}</p>
               <p>{frontmatter.description}</p>
+              Built With:
+              {frontmatter.builtWith.map((item) =>{
+              	return <div>{item}</div>
+              })}
             </div>
           </Link>
         );
@@ -34,6 +38,8 @@ export const projectQuery = graphql`
           frontmatter {
             title
             path
+            builtWith
+            description
           }
         }
       }
