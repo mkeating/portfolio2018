@@ -9,7 +9,7 @@ description: >-
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo est vel leo dignissim, vel volutpat ex dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus erat tortor, aliquet eu sodales vitae, porttitor eget enim. Phasellus volutpat fringilla cursus. Ut sed vehicula felis. In ligula erat, condimentum in feugiat id, interdum bibendum justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar eu leo sed interdum.
 
-```
+```javascript
 return (
   <nav className={"nav " + (this.props.deployed ? 'deployed' : '')}>
 					
