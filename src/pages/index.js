@@ -23,11 +23,11 @@ const IndexPage = ({data}) => {
               })}
             </div>
           </Link>
-        );
+        )
       })}
     </div>
-  );
-};
+  )
+}
 
 export const projectQuery = graphql`
   query ProjectIndexQuery {

@@ -1,14 +1,14 @@
 import React from 'react'
-import Link from 'gatsby-link';
+import Link from 'gatsby-link'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 
-import './index.scss';
+import './index.scss'
 
-require('prismjs/themes/prism-tomorrow.css');
+require('prismjs/themes/prism-tomorrow.css')
 
 const ListLink = props => (
 		
@@ -111,5 +111,5 @@ class Main extends React.Component {
 
 export default({ children }) => (
 		<Main children = {children()} />
-	);
+	)
 	

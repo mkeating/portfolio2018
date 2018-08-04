@@ -27,8 +27,8 @@ const IndexPage = ({data}) => {
         );
       })}
     </div>
-  );
-};
+  )
+}
 
 export const blogQuery = graphql`
   query BlogIndexQuery {
