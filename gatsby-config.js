@@ -27,8 +27,8 @@ module.exports = {
         pathToConfigModule: `src/utils/typography.js`,
       },
     },
-  `gatsby-transformer-remark`,
   `gatsby-plugin-react-helmet`,
+  `gatsby-plugin-styled-components`,
   `gatsby-plugin-sass`,
   {
     resolve: `gatsby-transformer-remark`,

@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react'
+import Link from 'gatsby-link';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -8,9 +8,9 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import './index.scss';
 
-require("prismjs/themes/prism-tomorrow.css");
+require('prismjs/themes/prism-tomorrow.css');
 
-//import 'prismjs/components/prism-javascript';
+
 
 const ListLink = props => (
 		
@@ -23,10 +23,6 @@ const ListLink = props => (
 	);
 
 class MobileNavButton extends React.Component {
-
-	click = () => {
-		console.log('clicked');
-	}
 
 	render(){
 		return(
@@ -41,7 +37,6 @@ class MobileNavButton extends React.Component {
 }
 
 class Nav extends React.Component {
-//<div className={"btn-group pull-right " + (this.props.showBulkActions ? 'show' : 'hidden')}>
 
 	render(){
 		return (
@@ -107,7 +102,6 @@ class Main extends React.Component {
 				<div className ="content">
 					{this.props.children}
 				</div>
-				
 
 				<MobileNavButton handler={this.handler} deployed={this.state.navDeployed}/>
 
