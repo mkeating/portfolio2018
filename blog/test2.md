@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo est vel leo
 
 Integer leo nibh, fringilla lacinia justo et, tempus ornare urna. Aliquam ullamcorper nisl bibendum mi vestibulum porttitor. Etiam non volutpat diam. Mauris imperdiet dignissim mollis. Donec sagittis quam non mattis consequat. Aenean vitae est vehicula, convallis metus vel, consequat enim. Quisque rhoncus orci accumsan orci placerat, sit amet pretium leo placerat. Nam sit amet dictum dui. Aliquam erat volutpat. Curabitur rutrum sollicitudin dolor et gravida. Aenean faucibus placerat eros, eu elementum ipsum volutpat quis. Aenean pellentesque lacus sed nisl gravida mollis. Nam tincidunt libero vitae tellus ornare rhoncus. Mauris id hendrerit quam.
 
-```javascript
+```
 return (
   <nav className={"nav " + (this.props.deployed ? 'deployed' : '')}>
 					
