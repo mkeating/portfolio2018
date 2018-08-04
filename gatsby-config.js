@@ -16,12 +16,6 @@ module.exports = {
 	    },
   },
   {
-    resolve: 'gatsby-plugin-material-ui',
-    options: {
-      pathToTheme: 'src/themes/default',
-    },
-  },
-  {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography.js`,
