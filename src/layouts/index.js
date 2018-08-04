@@ -10,8 +10,6 @@ import './index.scss';
 
 require('prismjs/themes/prism-tomorrow.css');
 
-
-
 const ListLink = props => (
 		
 		<Link to={props.to}>

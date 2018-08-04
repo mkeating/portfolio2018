@@ -1,12 +1,12 @@
-import React from "react";
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
 
 const IndexPage = ({data}) => {
-  const {edges: projects} = data.allMarkdownRemark;
+  const {edges: projects} = data.allMarkdownRemark
   return (
     <div>
       {projects.map (({node: project}) => {
-        const {frontmatter} = project;
+        const {frontmatter} = project
         return (
           <Link to={frontmatter.path}>
             <div>
@@ -45,6 +45,6 @@ export const projectQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default IndexPage;
+export default IndexPage

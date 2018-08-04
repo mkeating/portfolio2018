@@ -1,15 +1,16 @@
-
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
 import Paper from 'material-ui/Paper'
 
 const IndexPage = ({data}) => {
-  const {edges: posts} = data.allMarkdownRemark;
+  
+  const {edges: posts} = data.allMarkdownRemark
+
   return (
     <div>
       {posts.map (({node: post}) => {
         
-        const {frontmatter} = post;
+        const {frontmatter} = post
 
         return (
           <Paper>
@@ -29,8 +30,6 @@ const IndexPage = ({data}) => {
   );
 };
 
-//sort: { order: DESC, fields: [frontmatter___date] }
-
 export const blogQuery = graphql`
   query BlogIndexQuery {
     allMarkdownRemark( filter: { frontmatter: { path: { regex: "/\/blog\/(.*)/" } } } ) {
@@ -47,6 +46,6 @@ export const blogQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default IndexPage;
+export default IndexPage

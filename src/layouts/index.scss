@@ -13,9 +13,9 @@ body, html, .main, #___gatsby {
   overflow-y: hidden; 
 }
 
-/*a { text-decoration: none; }*/
+a { text-decoration: none; }
 
-/*a:hover { text-decoration: underline; }*/
+a:hover { text-decoration: underline; }
 
 .main {
   display: flex;
@@ -31,12 +31,14 @@ body, html, .main, #___gatsby {
     flex-direction: column;
     color: $color;
 
-    /*a {
+    a {
       color: $color; 
-    }*/
+    }
+
     a:hover {
       text-decoration: none; 
     }
+    
     h1{
       text-align: center;
     }
