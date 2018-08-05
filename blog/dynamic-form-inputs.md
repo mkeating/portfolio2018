@@ -12,7 +12,7 @@ The requirement for this one was to create a form for creating a list of multipl
 
 I solved this with vanilla JS and basic DOM manipulation, but I'd like to also implement it in React in a later post. 
 
-First, the markup; you can see the whole thing [here](https://codepen.io/mkeat/pen/qyYJBb): but it's a fairly standard form, so I'll just include the interesting part and remove the Bootstrap stuff:
+First, the markup; you can see the whole thing [here](https://codepen.io/mkeat/pen/qyYJBb) but it's a fairly standard form, so I'll just include the interesting part and remove the Bootstrap stuff:
 
 ```html
 <div class="form-group row">
