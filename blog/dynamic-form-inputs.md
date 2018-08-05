@@ -12,7 +12,7 @@ The requirement for this one was to create a form for creating a list of multipl
 
 I solved this with vanilla JS and basic DOM manipulation, but I'd like to also implement it in React in a later post. 
 
-First, the markup; you can see the whole thing here: but it's a fairly standard form, so I'll just include the interesting part and remove the Bootstrap stuff:
+First, the markup; you can see the whole thing [here](https://codepen.io/mkeat/pen/qyYJBb): but it's a fairly standard form, so I'll just include the interesting part and remove the Bootstrap stuff:
 
 ```html
 <div class="form-group row">
@@ -35,10 +35,9 @@ First, the markup; you can see the whole thing here: but it's a fairly standard 
 </div>
 ```
 
-#choice-input is the input box where the user enters each choice; when #add-choice-button is clicked, that choice is then moved into #choice-box and #choice-input is cleared, allowing for the user to enter more (and delete any created choices, which I'll get to later).
+`#choice-input` is the input box where the user enters each choice; when `#add-choice-button` is clicked, that choice is then moved into `#choice-box` and `#choice-input` is cleared, allowing for the user to enter more (and delete any created choices, which I'll get to later).
 
 Here is the JS that handles this interaction. 
-
 
 ```javascript
 //Add choices to the list
@@ -77,8 +76,8 @@ const addChoice = function(text) {
   choiceValidation();
 }
 ```
-In addition to creating the choices[] DOM elements, I'm keeping all current choices in a choices object, which I use for validation (React would be great here; an object that describes the shape of the DOM is basically what this.state is for).
 
+In addition to creating the choices\[] DOM elements, I'm keeping all current choices in a choices object, which I use for validation (React would be great here; an object that describes the shape of the DOM is basically what this.state is for).
 
 I broke out the addChoice functionality into it's own function so I can call it from two different event listeners, so users can add choices either by hitting the + button or just hitting enter:
 
@@ -104,8 +103,8 @@ addChoiceButton.addEventListener('click', function(event){
 });
 ```
 
-
 This will create an element that looks like this:
+
 ```html
 <div class="choice-box">
     <input type="text" name="choices[]" class="form-control choice-input">
@@ -113,8 +112,7 @@ This will create an element that looks like this:
 </div>
 ```
 
-`name="choices[]"` is the important part; this is what allows an arbitrary number of values for choices. When the form is submitted and you receive it serverside, you can iterate over choices[] and handle each one.
-
+`name="choices[]"` is the important part; this is what allows an arbitrary number of values for choices. When the form is submitted and you receive it serverside, you can iterate over choices\[] and handle each one.
 
 The delete function is pretty basic:
 
@@ -134,5 +132,4 @@ document.addEventListener('click', function(event){
 
 This listens for clicks on the whole docuement, then does some DOM-climbing to identify and remove the relevant choice (as well as update the choices state object)
 
-There were some requirements for the challenge, which I'll probably ignore, with the exception of validating this form(duplicate choices are not allowed, and a maximum number of choices can be set), which I'll cover in the next post as this is getting long. 
-
+There were some other requirements for the challenge, which I'll probably ignore, with the exception of validating this form(duplicate choices are not allowed, and a maximum number of choices can be set), which I'll cover in the next post as this is getting long.
