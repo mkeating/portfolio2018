@@ -8,11 +8,11 @@ description: >-
 ---
 I had the thought that I might want to document some of the interview questions and exercises I've been given and the solutions I've come up with. It'll let me more easily remember and reference problems I've seen before, and maybe give me some give interesting jumping-off points to new things.
 
-The requirement for this one was to create a form for creating a list of multiple options; for example, in a form builder like Google Forms or SurveyMonkey, you can create a checkbox queston with any number of options. Basically, a form with an arbitrary, user-defined number of inputs. 
+The requirement for this one was to create a form for creating a list of multiple options; for example, in a form builder like Google Forms or SurveyMonkey, you can create a checkbox question with any number of options. Basically, a form with an arbitrary, user-defined number of inputs. 
 
 I solved this with vanilla JS and basic DOM manipulation, but I'd like to also implement it in React in a later post. 
 
-First, the markup; you can see the whole thing [here](https://codepen.io/mkeat/pen/qyYJBb): but it's a fairly standard form, so I'll just include the interesting part and remove the Bootstrap stuff:
+First, the markup; you can see the whole thing [here](https://codepen.io/mkeat/pen/qyYJBb) but it's a fairly standard form, so I'll just include the interesting part:
 
 ```html
 <div class="form-group row">
