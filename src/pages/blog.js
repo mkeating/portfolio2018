@@ -13,10 +13,10 @@ const IndexPage = ({data}) => {
         const {frontmatter} = post
 
         return (
-          <Paper>
-            <Link to={frontmatter.path}>
+          <Paper className="blog-card">
+            <Link to={frontmatter.path} className="blog-card-link">
               <div>
-                <h2>          
+                <h2 className="blog-card-title">          
                     {frontmatter.title}
                 </h2>
                 <p>{frontmatter.date}</p>
