@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import ProjectCard from '../components/ProjectCard'
+
 const IndexPage = ({data}) => {
   const {edges: projects} = data.allMarkdownRemark
   return (
@@ -8,7 +10,7 @@ const IndexPage = ({data}) => {
       {projects.map (({node: project}) => {
         const {frontmatter} = project
         return (
-          <Link to={frontmatter.path}>
+          /*<Link to={frontmatter.path}>
             <div>
               <h2>
                 
@@ -22,7 +24,8 @@ const IndexPage = ({data}) => {
               	return <div>{item}</div>
               })}
             </div>
-          </Link>
+          </Link>*/
+          <ProjectCard data={frontmatter}/>
         )
       })}
     </div>

@@ -8,7 +8,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import './index.scss'
 
-require('prismjs/themes/prism-tomorrow.css')
+require('prismjs/themes/prism-okaidia.css')
 
 const ListLink = props => (
 		
@@ -82,11 +82,6 @@ class Main extends React.Component {
 
 	handler(){
 		this.setState({navDeployed: !this.state.navDeployed})
-		console.log('clicked')
-	}
-
-	componentDidUpdate(){
-		console.log(this.state)
 	}
 
 	render(){
