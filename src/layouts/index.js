@@ -12,7 +12,7 @@ require('prismjs/themes/prism-okaidia.css')
 
 const ListLink = props => (
 		
-		<Link to={props.to}>
+		<Link to={props.to} onClick={props.handler}>
 			<li>
 				{props.children}
 			</li>
@@ -44,7 +44,7 @@ class Nav extends React.Component {
 
 					<div className="nav-items">
 						<ul className="nav-list">
-							<ListLink to="/blog/">Blog</ListLink>
+							<ListLink to="/blog/" handler={this.props.handler}>Blog</ListLink>
 							<ListLink to="/me/">Me</ListLink>
 							<ListLink to="/work/">Work</ListLink>
 						</ul>
@@ -81,6 +81,7 @@ class Main extends React.Component {
 	}
 
 	handler(){
+		console.log('handler clicked')
 		this.setState({navDeployed: !this.state.navDeployed})
 	}
 
@@ -88,7 +89,7 @@ class Main extends React.Component {
 		return(
 			<div className="main">
 				
-				<Nav deployed={this.state.navDeployed}/>
+				<Nav deployed={this.state.navDeployed} handler={this.handler}/>
 
 				<div className="mobile-header"><Link to="/">MK</Link></div>
 				

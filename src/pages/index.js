@@ -10,22 +10,9 @@ const IndexPage = ({data}) => {
       {projects.map (({node: project}) => {
         const {frontmatter} = project
         return (
-          /*<Link to={frontmatter.path}>
-            <div>
-              <h2>
-                
-                  {frontmatter.title}
-                
-              </h2>
-              <p>{frontmatter.date}</p>
-              <p>{frontmatter.description}</p>
-              Built With:
-              {frontmatter.builtWith.map((item) =>{
-              	return <div>{item}</div>
-              })}
-            </div>
-          </Link>*/
+
           <ProjectCard data={frontmatter}/>
+        
         )
       })}
     </div>
