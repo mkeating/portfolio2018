@@ -20,7 +20,7 @@ const IndexPage = ({data}) => {
 }
 
 export const projectQuery = graphql`
-  query HomeProjectIndexQuery {
+  query WorkProjectIndexQuery {
     allMarkdownRemark (filter: { frontmatter: { path: { regex: "/\/projects\/(.*)/" } } }){
       edges {
         node {

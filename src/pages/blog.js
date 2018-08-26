@@ -8,6 +8,8 @@ const IndexPage = ({data}) => {
 
   return (
     <div>
+
+      <h1> Blog </h1>
       {posts.map (({node: post}) => {
         
         const {frontmatter} = post
