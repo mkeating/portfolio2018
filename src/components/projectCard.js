@@ -25,7 +25,7 @@ const styles = {
 
 /**/
 
-function ProjectCard(props) {
+function projectCard(props) {
 
   const { classes } = props
   return(
@@ -59,8 +59,8 @@ function ProjectCard(props) {
     )
 }
 
-ProjectCard.propTypes = {
+projectCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProjectCard);
+export default withStyles(styles)(projectCard);
