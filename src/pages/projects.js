@@ -11,7 +11,7 @@ const IndexPage = ({data}) => {
         const {frontmatter} = project
         return (
 
-          <ProjectCard data={frontmatter}/>
+          <projectCard data={frontmatter}/>
         
         )
       })}
