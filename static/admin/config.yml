@@ -30,4 +30,4 @@ collections:
       - { name: description, label: Description, widget: markdown }
       - { name: builtWith, label: Built With, widget: list }
       - { name: date, label: Date, widget: date }
-      - { name: image, label: Image, widget: markdown }
+      - { name: image, label: Image}
