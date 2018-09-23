@@ -30,6 +30,7 @@ export const projectQuery = graphql`
             path
             builtWith
             description
+            image
           }
         }
       }
