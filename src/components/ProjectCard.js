@@ -35,7 +35,7 @@ function ProjectCard(props) {
           <CardMedia className={classes.media}
             title = "wahatever"
             classes = {{root: 'myProjClass'}}
-            style = {{backgroundImage: `url(/images/pulp-bg.jpg)`, backgroundSize: 'cover'}}
+            style = {{backgroundImage: `url(/images/${props.data.image})`, backgroundSize: 'cover'}}
 
           /> 
 
