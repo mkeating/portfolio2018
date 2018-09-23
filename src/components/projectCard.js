@@ -13,14 +13,13 @@ import Card from "react-md/lib/Cards/Card";
 import Media, { MediaOverlay } from "react-md/lib/Media";
 */
 
+
 const styles = {
   card: {
-    /*maxWidth: 500,*/
     margin: 20,
   },
   media: {
     height: 300,
-    /*paddingTop: '56.25%', // 16:9*/ 
   },
 };
 
@@ -41,7 +40,9 @@ function ProjectCard(props) {
           /> 
 
 
-          <CardContent>  
+          <CardContent
+            style = {{padding: '20px'}}
+          >  
             <h2>{props.data.title}</h2>
             <p>{props.data.date}</p>
             <p>{props.data.description}</p>

@@ -3,6 +3,29 @@ $color: #f4f4f4;
 $text-color: #333;
 
 
+body::before {
+    content:""; /* required for ::before */
+    position:fixed; /* don't scroll with page */
+    z-index:-100; /* place behind elements on page */
+    width:100%;
+    height:100%;
+    background-color: #EFEAE6;
+    background-image: 
+    radial-gradient(circle farthest-side at top right, transparent, #DACFDD), radial-gradient(ellipse farthest-corner at 100% 100%, transparent, #E1A2AB);
+    animation:bg-change 20s infinite;
+}
+
+@keyframes bg-change {
+  0%, 100% {
+    filter:hue-rotate(0deg);
+  }
+  50% {
+    filter:hue-rotate(-95deg);
+  }
+   
+}
+
+
 body, html, .main, #___gatsby {
   //font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
   //font: 14px "din-round";
@@ -11,7 +34,7 @@ body, html, .main, #___gatsby {
   padding: 0;
   margin: 0;
   color: $text-color;
-  background-color: $color;
+  
   overflow-y: hidden; 
 }
 
