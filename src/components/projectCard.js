@@ -25,7 +25,7 @@ const styles = {
 
 /**/
 
-function projectCard(props) {
+function ProjectCard(props) {
 
   const { classes } = props
   return(
@@ -48,7 +48,7 @@ function projectCard(props) {
             <p>{props.data.description}</p>
             Built With:
             {
-              props.data.builtWith.map((item) =>{
+              props.data.builtWith.map((item) => {
                 return <div>{item}</div>
               })
             }  
@@ -59,8 +59,8 @@ function projectCard(props) {
     )
 }
 
-projectCard.propTypes = {
+ProjectCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(projectCard);
+export default withStyles(styles)(ProjectCard);

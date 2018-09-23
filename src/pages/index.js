@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import projectCard from '../components/projectCard'
+import ProjectCard from '../components/ProjectCard'
 
 const IndexPage = ({data}) => {
   const {edges: projects} = data.allMarkdownRemark
@@ -11,7 +11,7 @@ const IndexPage = ({data}) => {
         const {frontmatter} = project
         return (
 
-          <projectCard data={frontmatter}/>
+          <ProjectCard data={frontmatter}/>
         
         )
       })}
