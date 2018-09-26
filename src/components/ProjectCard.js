@@ -39,7 +39,6 @@ function ProjectCard(props) {
 
           /> 
 
-
           <CardContent
             style = {{padding: '20px'}}
           >  

@@ -10,9 +10,9 @@ const IndexPage = ({data}) => {
       {projects.map (({node: project}) => {
         const {frontmatter} = project
         return (
-
-          <ProjectCard data={frontmatter}/>
-        
+          <Link to={frontmatter.path} className="blog-card-link">
+            <ProjectCard data={frontmatter}/>
+          </Link>
         )
       })}
     </div>
