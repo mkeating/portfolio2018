@@ -46,11 +46,17 @@ function ProjectCard(props) {
             <p>{props.data.date}</p>
             <p>{props.data.description}</p>
             Built With:
+            <div className="project-tools">
             {
               props.data.builtWith.map((item) => {
-                return <div>{item}</div>
+                return (
+                    <div className="project-tool-container">
+                      <img className="project-tool-icon" src={`/images/icons/${item.toLowerCase()}.png`}/>
+                    </div>
+                  )
               })
-            }  
+            }
+            </div>  
           </CardContent>
       </Card>
       
