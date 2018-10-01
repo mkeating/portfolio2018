@@ -1,5 +1,5 @@
 ---
-path: react-dynamic-form
+path: /blog/react-dynamic-form
 date: '2018-10-01'
 title: React Dynamic Form
 description: Building a form with a dynamic number of inputs with React
