@@ -19,7 +19,7 @@ const styles = {
     margin: 20,
   },
   media: {
-    height: 300,
+    height: 250,
   },
 };
 
@@ -31,7 +31,7 @@ function ProjectCard(props) {
   return(
     <div>
         
-       <Card className={classes.card}>
+       <Card className={classes.card} style={{height:500}}>
           <CardMedia className={classes.media}
             title = "wahatever"
             classes = {{root: 'myProjClass'}}
