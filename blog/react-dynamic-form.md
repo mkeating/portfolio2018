@@ -6,7 +6,7 @@ description: Building a form with a dynamic number of inputs with React
 ---
 Let's implement the dynamic form from the [last post](/blog/dynamic-form-inputs) in React. I started with a parent Form component:
 
-```
+```javascript
 class Form extends React.Component {
   
   constructor(props){
