@@ -1,7 +1,7 @@
 ---
 path: /blog/react-dynamic-form
 date: '2018-10-01'
-title: React Dynamic Form
+title: React dynamic form
 description: Building a form with a dynamic number of inputs with React
 ---
 Let's implement the dynamic form from the [last post](/blog/dynamic-form-inputs) in React. I started with a parent Form component:
