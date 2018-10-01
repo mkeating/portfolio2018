@@ -33,7 +33,7 @@ class Form extends React.Component {
 
 Pretty standard. DynamicInputBox is where most of the work is being done. First, the render method:
 
-```
+```javascript
  render(){ 
     const items = this.state.items
     return(
@@ -52,7 +52,7 @@ The first bit is an input field and an "add" button. This is where the user ente
 
 Here's addItem(), and it's buddy, newItemInput:
 
-```
+```javascript
   addItem(){
     //add the new item to state
     if(this.state.newItem){ 
@@ -79,7 +79,7 @@ Back to the DynamicInputBox component, I render out all current items. I map ove
 
 I'm also passing two functions, deleteItemHandler and updateItemHandler. These are functions that handle the changing and deletion of already-created items. I'm passing them as props like this because I need the child component to be able to set the state of the parent component. https://react-cn.github.io/react/tips/communicate-between-components.html
 
-```
+```javascript
         {/* loop through the items kept in state */}
         {items.map((item) => {
           return(
