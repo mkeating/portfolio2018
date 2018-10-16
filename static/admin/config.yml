@@ -31,3 +31,6 @@ collections:
       - { name: builtWith, label: Built With, widget: list }
       - { name: date, label: Date, widget: date }
       - { name: image, label: Image}
+      - { name: liveLink, label: Live Link }
+      - { name: githubLink, label: Github Link }
+      

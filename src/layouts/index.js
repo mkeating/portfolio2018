@@ -46,7 +46,7 @@ class Nav extends React.Component {
 						<ul className="nav-list">
 							<ListLink to="/blog/" handler={this.props.handler}>Blog</ListLink>
 							<ListLink to="/me/">Me</ListLink>
-							<ListLink to="/work/">Work</ListLink>
+							<ListLink to="/projects/">Work</ListLink>
 						</ul>
 					</div>
 

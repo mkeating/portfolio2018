@@ -3,24 +3,30 @@ import Link from 'gatsby-link'
 
 import ProjectCard from '../components/ProjectCard'
 
-const IndexPage = ({data}) => {
+const WorkPage = ({data}) => {
   const {edges: projects} = data.allMarkdownRemark
   return (
     <div>
-      {projects.map (({node: project}) => {
-        const {frontmatter} = project
-        return (
 
-          <ProjectCard data={frontmatter}/>
-        
-        )
-      })}
+      <h1> My Work </h1>
+      <div className="project-page-container">
+        {projects.map (({node: project}) => {
+          const {frontmatter} = project
+          return (
+            <div className="project-page-card">
+              <Link to={frontmatter.path} className="blog-card-link">
+                <ProjectCard data={frontmatter}/>
+              </Link>
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }
 
 export const projectQuery = graphql`
-  query WorkProjectIndexQuery {
+  query ProjectIndexQuery {
     allMarkdownRemark (filter: { frontmatter: { path: { regex: "/\/projects\/(.*)/" } } }){
       edges {
         node {
@@ -30,6 +36,7 @@ export const projectQuery = graphql`
             path
             builtWith
             description
+            image
           }
         }
       }
@@ -37,4 +44,4 @@ export const projectQuery = graphql`
   }
 `
 
-export default IndexPage
+export default WorkPage
