@@ -1,6 +1,6 @@
 ---
 path: /blog/react-dynamic-form
-date: '2018-10-01'
+date: '2018-02-10'
 title: React dynamic form
 description: Building a form with a dynamic number of inputs with React
 ---
