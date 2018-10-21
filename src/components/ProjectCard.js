@@ -31,7 +31,7 @@ function ProjectCard(props) {
   return(
     <div>
         
-       <Card className={classes.card} style={{height:500}}>
+       <Card className={classes.card} >
           <CardMedia className={classes.media}
             title = "wahatever"
             classes = {{root: 'myProjClass'}}
