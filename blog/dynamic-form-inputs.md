@@ -1,6 +1,6 @@
 ---
 path: /blog/dynamic-form-inputs
-date: '2018-08-04'
+date: '2018-02-02'
 title: Dynamic form inputs
 description: >-
   A quick rundown of my solution for a front-end challenge: a form that allows
