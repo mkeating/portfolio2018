@@ -1,5 +1,6 @@
 ---
 path: /blog/dynamic-form-inputs
+layout: BlogPostTemplate
 date: '2018-02-02'
 title: Dynamic form inputs
 description: >-
