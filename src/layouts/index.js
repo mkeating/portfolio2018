@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faCodepen } from '@fortawesome/free-brands-svg-icons'
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import './index.scss'
@@ -53,13 +54,19 @@ class Nav extends React.Component {
 					<div className="social">
 						<ul>
 							<li>
-								<a href="">
+								<a href="https://github.com/mkeating">
 									<FontAwesomeIcon icon={faGithub} size="xs"/>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="https://www.linkedin.com/in/mikeating/">
 									<FontAwesomeIcon icon={faLinkedin} size="xs"/>
+								</a>
+							</li>
+
+							<li>
+								<a href="https://codepen.io/mkeat/">
+									<FontAwesomeIcon icon={faCodepen} size="xs"/>
 								</a>
 							</li>
 						</ul>
