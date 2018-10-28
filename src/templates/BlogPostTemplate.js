@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProjectTemplate = ({data}) => {
+const BlogTemplate = ({data}) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
 
@@ -8,19 +8,18 @@ const ProjectTemplate = ({data}) => {
     <div className="blog-post-container">
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
+        <h2>{frontmatter.date}</h2>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-
-        <div>Check out the <a href={{ frontmatter.liveLink }}>live site</a> </div>
       </div>
     </div>
   )
 
 }
 
-export const pageQuery = graphql`
+export const blogPageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
@@ -28,8 +27,9 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        layout
       }
     }
   }
 `
-export default ProjectTemplate
+export default BlogTemplate
