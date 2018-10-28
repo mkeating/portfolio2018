@@ -1,5 +1,6 @@
 ---
 path: /projects/poetwee
+layout: ProjectPostTemplate
 title: Poetwee
 description: A poem builder based on the Twitter API
 builtWith:
