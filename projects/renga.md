@@ -1,5 +1,6 @@
 ---
 path: /projects/renga
+layout: ProjectPostTemplate
 title: Renga
 description: Make contemplative poetry with others
 builtWith:
