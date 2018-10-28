@@ -32,6 +32,7 @@ body, html, .main, #___gatsby {
   margin: 0;
   color: $text-color;
   overflow-y: hidden; 
+  font-size:18px;
 }
 
 a { text-decoration: none; }
@@ -208,7 +209,9 @@ code {
     }
   }
 
-
+.home-header {
+  font-size: 3rem;
+}
 
 .blog-card {
   padding: 20px;
