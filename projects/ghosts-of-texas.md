@@ -1,5 +1,6 @@
 ---
 path: /projects/ghosts-of-texas
+layout: ProjectPostTemplate
 title: Ghosts of Texas
 description: A bot that tweets last words
 builtWith:
