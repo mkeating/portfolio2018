@@ -8,7 +8,7 @@ const MePage = props => {
 
   return (
     <div>
-      hi
+       <h1 className="page-header"> About Me </h1>
     </div>
   )
 }

@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Paper from 'material-ui/Paper'
 
+
+
 const IndexPage = ({data}) => {
   
   const {edges: posts} = data.allMarkdownRemark
@@ -9,7 +11,7 @@ const IndexPage = ({data}) => {
   return (
     <div>
 
-      <h1> Blog </h1>
+      <h1 className="page-header"> Blog </h1>
       {posts.map (({node: post}) => {
         
         const {frontmatter} = post

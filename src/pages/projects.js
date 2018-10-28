@@ -8,7 +8,7 @@ const WorkPage = ({data}) => {
   return (
     <div>
 
-      <h1> My Work </h1>
+      <h1 className="page-header"> My Work </h1>
       <div className="project-page-container">
         {projects.map (({node: project}) => {
           const {frontmatter} = project

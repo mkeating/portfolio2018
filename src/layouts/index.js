@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import './index.scss'
 
 require('prismjs/themes/prism-okaidia.css')

@@ -8,6 +8,7 @@ import CardContent from 'material-ui/Card';
 import CardMedia from 'material-ui/Card';
 import Button from 'material-ui/Button';
 
+import './ProjectCard.css';
 /*
 import Card from "react-md/lib/Cards/Card";
 import Media, { MediaOverlay } from "react-md/lib/Media";
@@ -51,7 +52,7 @@ function ProjectCard(props) {
               props.data.builtWith.map((item) => {
                 return (
                     <div className="project-tool-container">
-                      <img className="project-tool-icon" src={`/images/icons/${item.toLowerCase()}.png`}/>
+                      <img className="project-tool-icon" src={`/images/icons/${item.toLowerCase()}.png`} alt={item}/>
                     </div>
                   )
               })
