@@ -1,5 +1,6 @@
 ---
 path: /projects/pulp
+layout: ProjectPostTemplate
 title: Pulp
 description: A classroom tool for building collaborative interactive fiction in real-time
 builtWith:
