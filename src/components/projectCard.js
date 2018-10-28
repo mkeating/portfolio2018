@@ -9,11 +9,6 @@ import CardMedia from 'material-ui/Card';
 import Button from 'material-ui/Button';
 
 import './ProjectCard.scss';
-/*
-import Card from "react-md/lib/Cards/Card";
-import Media, { MediaOverlay } from "react-md/lib/Media";
-*/
-
 
 const styles = {
   card: {
